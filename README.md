@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## YSF Contractors Marketing Agency
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official code for https://albertaducts.web.app checkout page option for clients using stripe.
 
-## Available Scripts
+Created by: Yousuf Quddus
+Date: Saturday May 11, 2023
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Must alread have create-react-app installed
+To download dependacies for this project run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+$ npm i react-router-dom @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @emailjs/browser react-toastify react-spinners
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+$ npm i bootstrap react-bootstrap react-router-dom
+```
 
-### `npm test`
+To start reactjs application run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+$ npm start
+```
 
-### `npm run build`
+or
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+$ yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#utilized react-router, useState, useEffect, useTimeout, and useRef for variety of tasks throughout website.
+#utilized bootstrap and react-bootstrap for premade react bootstrap components.
+#used prop drilling to pass props through to other component elements.
+#react-spinners made loading micoanimation for formSubmission Event
+#video autoplay implementation for great home page design
+#react-toastify makes it very easy to get front-end submission animations for better UI/UX. (submission notification, "Thankyou...")
+#emailjs API allows forms to gmail backend notifications extremely easy (Form Submission to linked Gmail Acc)
+#simple CSS increases overall website when done with contrast, planning, etc.
+#microanimation which bring sites to life (navbar after certain screen length becomes solid color, button hover affects)
+#should leave a nice margin between block components elements, in other words, leaving whitespace is good.
 
-### `npm run eject`
+## Tips
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#leave lots of whitespace (margin) on nav element as in chrome, as you scroll down, the mobile browser will add margin from top.
+#to allow box-shadow on all form elements (including iOS safari mobile, as the mobile view on iOS phones tends to not show box-shadow) check commented syles on ContactContent.css file.
