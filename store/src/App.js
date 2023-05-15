@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/Navbar';
 import { Container } from 'react-bootstrap';
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Store from './pages/Store';
 import Success from './pages/Success';
@@ -20,6 +21,7 @@ function App() {
             <Route path='cancel' element={<Cancel />} />
           </Routes>
         </BrowserRouter>
+        <ToastContainer />
       </Container>
     </CartProvider>
   );

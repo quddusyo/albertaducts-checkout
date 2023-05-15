@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
-import { serviceArray, getServiceData } from './serviceStore';
+import { getServiceData } from './serviceStore';
+
 
 export const CartContext = createContext({
     items: [],
@@ -9,6 +10,7 @@ export const CartContext = createContext({
     deleteFromCart: () => {},
     getTotalCost: () => {}
 });
+
 
 export function CartProvider({children}) {
     const [cartServices, setCartServices] = useState([]);
@@ -21,12 +23,11 @@ export function CartProvider({children}) {
         }
         return quantity;
     }
-    
     function addOneToCart(id) {
         /* 
             description: function thats adds one to quantity
             pseudocode:
-            get service quantity by id
+            get service quantity by id.
             if service is not in cart, set quantity to 1
             else add 1 to the servicequantity.
         */
@@ -100,7 +101,7 @@ export function CartProvider({children}) {
         let totalCost = 0;
         cartServices.map((cartItem) => {
             const serviceData = getServiceData(cartItem.id);
-            totalCost += (serviceData.price * cartItem.quantity);
+            return totalCost += (serviceData.price * cartItem.quantity);
         })
         return totalCost;
     }

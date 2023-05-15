@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { Button, Container, Navbar, Modal } from 'react-bootstrap';
+import { Button, Navbar, Modal } from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import CartProduct from './CartProduct';
+import logo from '../logo.png';
 
 const NavbarComponent = () => {
     const cart = useContext(CartContext);
@@ -29,21 +30,21 @@ const NavbarComponent = () => {
   return (
     <>
         <Navbar expands="sm">
-            <Navbar.Brand href="/">AlbertaDucts Checkout</Navbar.Brand>
+            <Navbar.Brand href="/"><img src={logo} align='center' className='p-3' alt='logo' /></Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className='justify-content-end'>
                 <Button onClick={handleShow}>Cart ({serviceCount} Items)</Button>
             </Navbar.Collapse>
         </Navbar>
         <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header closebutton="true">
                 <Modal.Title>Online Checkout</Modal.Title>
             </Modal.Header>
-            <Modal.Body closeButton>
+            <Modal.Body closebutton="true">
                 { serviceCount > 0 ?
                     <>
                         <p>Items in your cart:</p>
-                            {cart.items.map( (currentService, idx) => (
+                            {cart.items.map((currentService, idx) => (
                                 <CartProduct key={idx} id={currentService.id} quantity={currentService.quantity}></CartProduct>
                             ))}
 
