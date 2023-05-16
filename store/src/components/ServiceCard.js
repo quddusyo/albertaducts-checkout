@@ -12,7 +12,7 @@ const ServiceCard = (props) => { // props.service is the service we are selling
 
   const addOne = () => {
     cart.addOneToCart(service.id);
-    toast('Added item to cart')
+    toast('Added item to cart');
   }
 
   return (
@@ -40,7 +40,7 @@ const ServiceCard = (props) => { // props.service is the service we are selling
           </>
           :
           <>
-            <Button variant='primary' className='mt-2' onClick={()=>cart.addOneToCart(service.id)}>Add To Cart</Button>
+            <Button variant='primary' className='mt-2' onClick={addOne}>Add To Cart</Button>
           </>
           }
         </Card.Body>

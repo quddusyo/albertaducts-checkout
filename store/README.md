@@ -38,6 +38,8 @@ utilized react-router, useState, useContext, and useRef for variety of tasks thr
 
 utilized bootstrap and react-bootstrap for premade react bootstrap components.
 
+Utilized react-toastify library to create toasts for improved UI.
+
 Implemented backend server using expressjs, cors, and stripe to process secure payment processing.
 
 Implemented prop drilling to pass props to other components and learned how to utilize useContext with useState to pass variety of complex props easily.
