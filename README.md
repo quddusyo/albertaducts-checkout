@@ -1,4 +1,6 @@
-## YSF Contractors Marketing Agency
+## YSF Consulting Marketing Agency
+
+TEMPLATE
 
 Official code for https://albertaducts.web.app checkout page option for clients using stripe.
 
