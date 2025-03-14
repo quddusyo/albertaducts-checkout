@@ -14,8 +14,6 @@ To download dependacies for this project run:
 
 ```bash
 $ npm i react-router-dom @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @emailjs/browser react-toastify react-spinners
-
-$ npm i bootstrap react-bootstrap react-router-dom
 ```
 
 To start reactjs application run:
